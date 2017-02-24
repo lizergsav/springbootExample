@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions_1jub5rz" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="example" name="example">
+    <decisionTable id="decisionTable" hitPolicy="FIRST">
+      <input id="input1" label="name" camunda:inputVariable="">
+        <inputExpression id="inputExpression1" typeRef="string">        <text>req.name</text>
+</inputExpression>
+      </input>
+      <input id="InputClause_08xs15a" label="testNumber" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_0ayzaou" typeRef="integer">        <text>req.testNumber</text>
+</inputExpression>
+      </input>
+      <output id="output1" label="result" name="result" typeRef="string" />
+      <rule id="row-680725772-1">
+        <inputEntry id="UnaryTests_09g4daf">        <text><![CDATA["A", "B"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1b3pcqc">        <text>10</text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1x8l1er">        <text><![CDATA["OK"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-680725772-2">
+        <inputEntry id="UnaryTests_1r94of6">        <text><![CDATA["name"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1fox90m">        <text>0</text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0rcdut8">        <text><![CDATA["Maybe"]]></text>
+</outputEntry>
+      </rule>
+      <rule id="row-680725772-3">
+        <inputEntry id="UnaryTests_021jnt2">        <text></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0ud7ej8">        <text></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1bczcmh">        <text><![CDATA["No way"]]></text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
