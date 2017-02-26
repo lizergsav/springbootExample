@@ -5,12 +5,12 @@ import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ExampleService implements JavaDelegate {
+public class ShowVariables implements JavaDelegate {
 
 	public void execute(DelegateExecution execution) throws Exception {
 		
-		execution.setVariable("result", "zero");
-		System.out.println("The business key is: ".concat(execution.getBusinessKey()));
+		System.out.println("The variables".concat(execution.getVariables().toString()));
+		
 	}
 
 }

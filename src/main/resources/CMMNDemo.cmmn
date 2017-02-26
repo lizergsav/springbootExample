@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmmn:definitions xmlns:dc="http://www.omg.org/spec/CMMN/20151109/DC" xmlns:di="http://www.omg.org/spec/CMMN/20151109/DI" xmlns:cmmndi="http://www.omg.org/spec/CMMN/20151109/CMMNDI" xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Test" targetNamespace="http://bpmn.io/schema/cmmn" exporter="Camunda Modeler" exporterVersion="1.5.1">
+  <cmmn:caseFileItemDefinition id="CaseFileItemDefinition_17z1d0w" />
+  <cmmn:case id="CMMNDemo" name="cmmnExample">
+    <cmmn:casePlanModel id="CasePlanModel_1" name="A CasePlanModel">
+      <cmmn:extensionElements />
+      <cmmn:planItem id="mileStone1" name="mileStone1" definitionRef="Milestone_17awnrh" />
+      <cmmn:planItem id="FirstTask" name="FirstTask" definitionRef="HumanTask_19807er">
+        <cmmn:itemControl id="PlanItemControl_1ggptcc">
+          <cmmn:manualActivationRule id="ManualActivationRule_1ahc859">
+            <cmmn:condition id="Expression_05tjy71">${true}</cmmn:condition>
+          </cmmn:manualActivationRule>
+        </cmmn:itemControl>
+      </cmmn:planItem>
+      <cmmn:planItem id="PlanItem_18rie4s" definitionRef="Task_1i8nkpv">
+        <cmmn:itemControl id="PlanItemControl_1tlm8t0">
+          <cmmn:manualActivationRule id="ManualActivationRule_0c1wb63">
+            <cmmn:condition id="Expression_0rvzcrj">${false}</cmmn:condition>
+          </cmmn:manualActivationRule>
+        </cmmn:itemControl>
+      </cmmn:planItem>
+      <cmmn:milestone id="Milestone_17awnrh" />
+      <cmmn:humanTask id="HumanTask_19807er" />
+      <cmmn:task id="Task_1i8nkpv" name="SecondTask" />
+    </cmmn:casePlanModel>
+  </cmmn:case>
+  <cmmndi:CMMNDI>
+    <cmmndi:CMMNDiagram id="_5a66685b-5f57-4e2f-b1d1-acca4fae04b2" name="CMMNTest">
+      <cmmndi:Size xsi:type="dc:Dimension" width="500" height="500" />
+      <cmmndi:CMMNShape id="DI_CasePlanModel_1" cmmnElementRef="CasePlanModel_1">
+        <dc:Bounds x="114" y="63" width="534" height="389" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_1jmq2mi_di" cmmnElementRef="mileStone1">
+        <dc:Bounds x="367" y="152" width="100" height="40" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_1nvox2k_di" cmmnElementRef="FirstTask">
+        <dc:Bounds x="150" y="96" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_18rie4s_di" cmmnElementRef="PlanItem_18rie4s">
+        <dc:Bounds x="150" y="276" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+    </cmmndi:CMMNDiagram>
+  </cmmndi:CMMNDI>
+</cmmn:definitions>

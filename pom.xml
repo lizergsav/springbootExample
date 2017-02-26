@@ -43,11 +43,17 @@
       <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
     </dependency>
 
+	<dependency>
+      <groupId>org.codehaus.groovy</groupId>
+      <artifactId>groovy-all</artifactId>
+    </dependency>
+    
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
     </dependency>
     
+    <!-- 
     <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc7</artifactId>
@@ -55,7 +61,7 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/ojdbc6.jar</systemPath>
         </dependency>
-
+ -->
     <dependency>
       <groupId>org.camunda.bpm.extension.springboot</groupId>
       <artifactId>camunda-bpm-spring-boot-starter-test</artifactId>
@@ -74,22 +80,6 @@
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.6.0</version>
-		</dependency>
-
-			<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
-		<dependency>
-		    <groupId>org.freemarker</groupId>
-		    <artifactId>freemarker</artifactId>
-		    <version>2.3.20</version>
-		</dependency>
-	
-	
-	<!-- ActiveMQ -->
-		<!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-jms-pool -->
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-jms-pool</artifactId>
-			<version>5.14.3</version>
 		</dependency>
     
   </dependencies>
