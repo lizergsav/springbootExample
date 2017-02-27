@@ -1,9 +1,12 @@
-# springbootExample
+#Camunda springboot example
 
-This is my springboot example. My plan is to use the following:
- - Spring MVC
- - change port of the Tomcat
- - use the recommended project structure
- - inject a bean
-Later
- - FreeMaker
+You can change the Tomcat variables in the application properties. The default port is 80.
+Some services are developed. You can see under the http://localhost/swagger-ui.html
+
+The Camunda built-in services are available on http://localhost/engine-rest
+You can find details about the rest services here: https://docs.camunda.org/manual/latest/reference/rest/
+
+check that the services are available (GET)
+	- http://localhost/engine-rest/engine   
+
+

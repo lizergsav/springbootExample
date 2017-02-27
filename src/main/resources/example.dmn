@@ -2,29 +2,47 @@
 <definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions_1jub5rz" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
   <decision id="example" name="example">
     <decisionTable id="decisionTable" hitPolicy="FIRST">
-      <input id="input1" label="name" camunda:inputVariable="">
-        <inputExpression id="inputExpression1" typeRef="string">        <text>req.name</text>
+      <input id="input1" label="DocType" camunda:inputVariable="">
+        <inputExpression id="inputExpression1" typeRef="string">        <text>docType</text>
 </inputExpression>
       </input>
-      <input id="InputClause_08xs15a" label="testNumber" camunda:inputVariable="">
-        <inputExpression id="LiteralExpression_0ayzaou" typeRef="integer">        <text>req.testNumber</text>
+      <input id="InputClause_08xs15a" label="DocCategory" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_0ayzaou" typeRef="string">        <text>docCategory</text>
 </inputExpression>
       </input>
-      <output id="output1" label="result" name="result" typeRef="string" />
+      <input id="InputClause_150j3u1" label="" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_1ctilr3" typeRef="string">        <text>docSpecies</text>
+</inputExpression>
+      </input>
+      <output id="output1" label="Branch" name="branch" typeRef="string" />
+      <output id="OutputClause_1jfdeui" label="Unit" name="unit" typeRef="string" />
+      <output id="OutputClause_01mwagk" label="Employee" name="employee" typeRef="string" />
       <rule id="row-680725772-1">
-        <inputEntry id="UnaryTests_09g4daf">        <text><![CDATA["A", "B"]]></text>
+        <inputEntry id="UnaryTests_09g4daf">        <text><![CDATA["3-001-01-00"]]></text>
 </inputEntry>
-        <inputEntry id="UnaryTests_1b3pcqc">        <text>10</text>
+        <inputEntry id="UnaryTests_1b3pcqc">        <text><![CDATA["054a"]]></text>
 </inputEntry>
-        <outputEntry id="LiteralExpression_1x8l1er">        <text><![CDATA["OK"]]></text>
+        <inputEntry id="UnaryTests_0q42tmu">        <text><![CDATA["EU_Form"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1x8l1er">        <text><![CDATA["Branch"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1c434zk">        <text><![CDATA["Unit"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1ed0vzd">        <text><![CDATA["employee"]]></text>
 </outputEntry>
       </rule>
       <rule id="row-680725772-2">
         <inputEntry id="UnaryTests_1r94of6">        <text><![CDATA["name"]]></text>
 </inputEntry>
-        <inputEntry id="UnaryTests_1fox90m">        <text>0</text>
+        <inputEntry id="UnaryTests_1fox90m">        <text></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_095vwqw">        <text></text>
 </inputEntry>
         <outputEntry id="LiteralExpression_0rcdut8">        <text><![CDATA["Maybe"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_1j8xerf">        <text></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0mydbko">        <text></text>
 </outputEntry>
       </rule>
       <rule id="row-680725772-3">
@@ -32,7 +50,13 @@
 </inputEntry>
         <inputEntry id="UnaryTests_0ud7ej8">        <text></text>
 </inputEntry>
+        <inputEntry id="UnaryTests_0p952k9">        <text></text>
+</inputEntry>
         <outputEntry id="LiteralExpression_1bczcmh">        <text><![CDATA["No way"]]></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_0nzaobs">        <text></text>
+</outputEntry>
+        <outputEntry id="LiteralExpression_02hv0g1">        <text></text>
 </outputEntry>
       </rule>
     </decisionTable>

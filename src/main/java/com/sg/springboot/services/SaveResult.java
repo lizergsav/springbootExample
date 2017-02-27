@@ -5,11 +5,11 @@ import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ShowVariables implements JavaDelegate {
+public class SaveResult implements JavaDelegate {
 
 	public void execute(DelegateExecution execution) throws Exception {
-		
-		System.out.println("The variables".concat(execution.getVariables().toString()));
+		// TODO Auto-generated method stub
+		System.out.println("Save data into the DB");
 		
 	}
 

@@ -9,34 +9,20 @@ public class Request implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private String name;
-	private String description;
-	private Integer testNumber;
-	private String serviceURL;
+	private Document document;
+	private Data data;
+	public Document getDocument() {
+		return document;
+	}
+	public void setDocument(Document document) {
+		this.document = document;
+	}
+	public Data getData() {
+		return data;
+	}
+	public void setData(Data data) {
+		this.data = data;
+	}
 	
-	public final String getName() {
-		return name;
-	}
-	public final void setName(String name) {
-		this.name = name;
-	}
-	public final String getDescription() {
-		return description;
-	}
-	public final void setDescription(String description) {
-		this.description = description;
-	}
-	public final Integer getTestNumber() {
-		return testNumber;
-	}
-	public final void setTestNumber(Integer testNumber) {
-		this.testNumber = testNumber;
-	}
-	public String getServiceURL() {
-		return serviceURL;
-	}
-	public void setServiceURL(String serviceURL) {
-		this.serviceURL = serviceURL;
-	}
 	
 }
