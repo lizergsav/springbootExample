@@ -30,6 +30,15 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      
+      <dependency>
+		  <groupId>org.camunda.bpm</groupId>
+		  <artifactId>camunda-bom</artifactId>
+		  <version>7.6.0</version>
+		  <scope>import</scope>
+		  <type>pom</type>
+		</dependency>
+      
     </dependencies>
   </dependencyManagement>
 
@@ -52,20 +61,26 @@
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.camunda.connect/camunda-connect-connectors-all -->
-	<dependency>
-	    <groupId>org.camunda.connect</groupId>
-	    <artifactId>camunda-connect-connectors-all</artifactId>
-	    <version>1.0.3</version>
-	</dependency>
 
-	<!-- https://mvnrepository.com/artifact/org.camunda.commons/camunda-commons-utils -->
 	<dependency>
-	    <groupId>org.camunda.commons</groupId>
-	    <artifactId>camunda-commons-utils</artifactId>
-	    <version>1.4.0</version>
+	  <groupId>org.camunda.connect</groupId>
+	  <artifactId>camunda-connect-core</artifactId>
 	</dependency>
-
+	
+	<dependency>
+	  <groupId>org.camunda.connect</groupId>
+	  <artifactId>camunda-connect-http-client</artifactId>
+	</dependency>
+		
+	<dependency>
+	  <groupId>org.camunda.connect</groupId>
+	  <artifactId>camunda-connect-soap-http-client</artifactId>
+	</dependency>
+		
+    <dependency>
+	  <groupId>org.camunda.bpm</groupId>
+	  <artifactId>camunda-engine-plugin-connect</artifactId>
+	</dependency>
     
     <!-- 
     <dependency>

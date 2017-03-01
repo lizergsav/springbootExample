@@ -10,3 +10,8 @@ check that the services are available (GET)
 	- http://localhost/engine-rest/engine   
 
 
+The example contain
+	- Camunda embedded Springboot application
+	- Spring MVC for some Camunda services
+	- Cockpit és Rest services for Camunda
+	- HTTP connector example
